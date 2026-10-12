@@ -100,8 +100,8 @@ with a link to your run.
 - The ISO is **live only**: it doesn't install to a disk yet, and nothing is
   saved when you shut down. See
   [Known Limitations](https://github.com/Eric-Ness/linuxlive/wiki/Known-Limitations).
-- Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.1.1. To
-  move to a newer release, change `@v0.1.1` in
+- Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.1.2. To
+  move to a newer release, change `@v0.1.2` in
   [`.github/workflows/build.yml`](.github/workflows/build.yml).
 - This template is under the MIT No Attribution licence, so your distro's
   files are yours to license however you like. linuxlive itself is GPL-3.0.
