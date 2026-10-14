@@ -103,8 +103,13 @@ with a link to your run.
   image each build publishes to this repository's packages, so installing
   them needs the internet, and installed systems update from it. See
   [Known Limitations](https://github.com/Eric-Ness/linuxlive/wiki/Known-Limitations).
-- Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.3.0. To
-  move to a newer release, change `@v0.3.0` in
+- Your spec can also add packages, files, your own scripts (run while the
+  image is built, at an installed computer's first start, or at each user's
+  first login) and code from GitHub. Put scripts in `scripts/` and files in
+  `files/`; see
+  [Writing a Spec: Extras](https://github.com/Eric-Ness/linuxlive/wiki/Writing-a-Spec#extras-your-own-packages-files-scripts-and-code).
+- Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.4.0. To
+  move to a newer release, change `@v0.4.0` in
   [`.github/workflows/build.yml`](.github/workflows/build.yml).
 - This template is under the MIT No Attribution licence, so your distro's
   files are yours to license however you like. linuxlive itself is GPL-3.0.
