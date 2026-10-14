@@ -97,11 +97,14 @@ with a link to your run.
 
 ## Good to know
 
-- The ISO is **live only**: it doesn't install to a disk yet, and nothing is
-  saved when you shut down. See
+- The ISO runs live (nothing is saved when you shut down) and can install
+  itself: the "Install" desktop icon or boot-menu entry erases one whole disk
+  and installs your distro. Fedora-based distros install from the system
+  image each build publishes to this repository's packages, so installing
+  them needs the internet, and installed systems update from it. See
   [Known Limitations](https://github.com/Eric-Ness/linuxlive/wiki/Known-Limitations).
-- Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.2.0. To
-  move to a newer release, change `@v0.2.0` in
+- Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.3.0. To
+  move to a newer release, change `@v0.3.0` in
   [`.github/workflows/build.yml`](.github/workflows/build.yml).
 - This template is under the MIT No Attribution licence, so your distro's
   files are yours to license however you like. linuxlive itself is GPL-3.0.
