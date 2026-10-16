@@ -71,6 +71,13 @@ Commit your changes to `main`. That starts a build. Watch it in the
 To build again without changing anything, choose **Actions** → **build** →
 **Run workflow**.
 
+A live ISO never updates itself, so the workflow also rebuilds your distro
+once a month (on the 7th) with the newest packages and security fixes.
+GitHub pauses that after 60 days without a commit to the repository; to turn
+it back on, click **Enable workflow** in the **Actions** tab, or **Rebuild
+now** on linuxlive.com's My distros page. To stop it, delete the `schedule:` lines in
+[`.github/workflows/build.yml`](.github/workflows/build.yml).
+
 ## 5. Download and boot it
 
 Open the finished run and scroll to **Artifacts**. Download
