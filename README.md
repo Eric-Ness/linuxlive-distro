@@ -115,8 +115,8 @@ with a link to your run.
   first login) and code from GitHub. Put scripts in `scripts/` and files in
   `files/`; see
   [Writing a Spec: Extras](https://github.com/Eric-Ness/linuxlive/wiki/Writing-a-Spec#extras-your-own-packages-files-scripts-and-code).
-- Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.4.2. To
-  move to a newer release, change `@v0.4.2` in
+- Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.8.0. To
+  move to a newer release, change `@v0.8.0` in
   [`.github/workflows/build.yml`](.github/workflows/build.yml).
 - This template is under the MIT No Attribution licence, so your distro's
   files are yours to license however you like. linuxlive itself is GPL-3.0.
