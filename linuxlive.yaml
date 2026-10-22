@@ -1,12 +1,12 @@
 # Your distro. Change anything here, commit, and GitHub Actions builds it.
 # Every option is explained at
-# https://github.com/Eric-Ness/linuxlive/wiki/Writing-a-Spec
+# https://docs.linuxlive.com/spec/reference/
 schema_version: 1
 name: My Distro          # up to 40 characters; shown in the boot menu and About screen
 version: "0.1"           # keep the quotes
 base: ubuntu             # ubuntu or fedora
 desktop: cinnamon        # gnome, kde or cinnamon
-apps:                    # app ids from the wiki's Apps table, installed from Flathub
+apps:                    # from Flathub; app ids: https://docs.linuxlive.com/spec/catalog/
   - firefox
   - vlc
 branding:
