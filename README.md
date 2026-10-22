@@ -44,12 +44,12 @@ branding:
 - `base`: `ubuntu` (Ubuntu 26.04 LTS) or `fedora` (Fedora 44).
 - `desktop`: `gnome`, `kde` or `cinnamon`.
 - `apps`: any of the 20 apps in the
-  [Apps table](https://github.com/Eric-Ness/linuxlive/wiki/Writing-a-Spec#apps),
+  [catalog](https://docs.linuxlive.com/spec/catalog/#apps),
   such as `libreoffice`, `gimp`, `steam` or `gcompris`.
 - Keep the quotes around `version` and `accent_color`.
 
-[Writing a Spec](https://github.com/Eric-Ness/linuxlive/wiki/Writing-a-Spec)
-explains every option.
+The [spec reference](https://docs.linuxlive.com/spec/reference/) explains every option, and
+[the docs](https://docs.linuxlive.com/) cover the rest.
 
 ## 3. Add your art
 
@@ -87,8 +87,8 @@ every check that passed.
 
 Then try it in VirtualBox, or write it to a USB stick of 8 GB or more with
 Rufus (DD mode), Fedora Media Writer or balenaEtcher.
-[Testing and Booting](https://github.com/Eric-Ness/linuxlive/wiki/Testing-and-Booting)
-covers checksums, VirtualBox settings, USB writers and boot keys.
+The docs cover [VirtualBox](https://docs.linuxlive.com/help/virtualbox/) and
+[USB sticks](https://docs.linuxlive.com/help/usb-stick/): checksums, settings, writers and boot keys.
 
 ## If the build fails
 
@@ -99,6 +99,7 @@ Open the failed step to see why.
 - **Verify**: one of the checks on the booted system failed. If it's about
   the wallpaper's colour, use a more colourful PNG.
 
+[Why a build fails](https://docs.linuxlive.com/help/failed-builds/) goes through the common causes.
 Anything else: [open an issue](https://github.com/Eric-Ness/linuxlive/issues)
 with a link to your run.
 
@@ -109,12 +110,13 @@ with a link to your run.
   and installs your distro. Fedora-based distros install from the system
   image each build publishes to this repository's packages, so installing
   them needs the internet, and installed systems update from it. See
-  [Known Limitations](https://github.com/Eric-Ness/linuxlive/wiki/Known-Limitations).
+  [Known limits](https://docs.linuxlive.com/help/known-limits/).
 - Your spec can also add packages, files, your own scripts (run while the
   image is built, at an installed computer's first start, or at each user's
   first login) and code from GitHub. Put scripts in `scripts/` and files in
   `files/`; see
-  [Writing a Spec: Extras](https://github.com/Eric-Ness/linuxlive/wiki/Writing-a-Spec#extras-your-own-packages-files-scripts-and-code).
+  [Extras](https://docs.linuxlive.com/workshop/extras/) and the
+  [spec reference](https://docs.linuxlive.com/spec/reference/#packages).
 - Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.9.1. To
   move to a newer release, change `@v0.9.1` in
   [`.github/workflows/build.yml`](.github/workflows/build.yml).
