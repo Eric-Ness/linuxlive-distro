@@ -117,8 +117,8 @@ with a link to your run.
   `files/`; see
   [Extras](https://docs.linuxlive.com/workshop/extras/) and the
   [spec reference](https://docs.linuxlive.com/spec/reference/#packages).
-- Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.9.1. To
-  move to a newer release, change `@v0.9.1` in
+- Builds use [linuxlive](https://github.com/Eric-Ness/linuxlive) v0.9.2. To
+  move to a newer release, change `@v0.9.2` in
   [`.github/workflows/build.yml`](.github/workflows/build.yml).
 - This template is under the MIT No Attribution licence, so your distro's
   files are yours to license however you like. linuxlive itself is GPL-3.0.
